@@ -8,3 +8,11 @@ h1{
     width: 200px;
 }
 
+.logo1 {
+    display: flex; 
+    align-items: center;
+}
+
+.textos {
+    margin-left: 20px; 
+}
