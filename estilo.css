@@ -1,36 +1,39 @@
 body {
-    background-image: url('Imagenes/imagen_fondo.jpg'); 
+    background-image: url('Imagenes/imagen_fondo2.jpg'); 
     background-size: cover; 
 }
 
+
 h1{
-    color:grey;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: right;
+
 }
 h2{
-    color:grey;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: right;
 }
 nav{
     color:antiquewhite;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     font-size:larger;
 }
 
 a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:antiquewhite;
 }
 
 .info{
-    font-style: unset;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: center;
     float: right;
-    width: 60%;
-    color:grey;
+    width: 70%;
+    color:rgb(177, 177, 177);
 }
 
 .logo {
@@ -45,8 +48,8 @@ a{
 }
 
 .info2 {
-    background-color: black;
-    color:grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(177, 177, 177);
     font-size: large;
     text-align: center;
     position: absolute;
@@ -57,7 +60,7 @@ a{
 }
 
 .ingresar {
-    color:grey;
+    color:antiquewhite;
     font-size: x-large;
     text-align: center;
     position: absolute;
@@ -71,14 +74,13 @@ button{
     font-size: large;
     color:black;
 
-
-
 }
 
 
 
 
 .opciones {
+
     color:antiquewhite;
     top: 80%;
     width: 100%; 
