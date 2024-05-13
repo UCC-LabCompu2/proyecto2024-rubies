@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora de aceleracion</title>
+    <title> Calculadora de aceleracion</title>
     <meta content="Catalina Rubies" name="autor">
     <meta content="Pagina web para calcular aceleracion" name="descripcion">
     <meta content="aceleracion, velocidad, tiempo, posicion" name="palabras clave">
@@ -10,24 +10,38 @@
 
 </head>
 <body>
-<p>
+    <nav>
+        <a href="file:///C:/Users/ggrub/Desktop/Labcomputacion2/proyecto2024-rubies/index.html" target="_self">Inicio</a>
+    </nav>
+<header>
+    <h2> Calculadora de aceleracion en funcion de la velocidad inicial, velocidad final y tiempo</h2>
+</header>
 
-    Tiempo inicial [s] 
-    <input type="number" name="tiempoi">
-    Tiempo final [s] 
-    <input type="number" name="tiempof">
-</p>
-<p>
-    Velocidad inicial [m/s] 
-    <input type="number" name="velinicial">
-    Velocidad final [m/s] 
-    <input type="number" name="velfinal">
-</p>
-<p>
-    Aceleracion resultante [m/s²]
-    <input type="number" name="resultadoac">
-</p>
+<section class="info">
+    <p>
+    Como se menciono anteriormente, la aceleracion es el cambio en la velocidad por unidad de tiempo:
+    </p>
+</section>
 
+    <fieldset class="ingresar">
+        <legend>Ingresar los datos requeridos:</legend>
+        <p>
+        <label for="tiempoi"> Tiempo inicial [s]:</label>
+        <input type="number"id="tiempoi"><br>
+        <label for="tiempof"> Tiempo final [s]:</label>
+        <input type="number" id="tiempof">
+        </p>
+        <p>
+        <label for="velinicial"> Velocidad inicial [m/s]:</label>
+        <input type="number"id="velinicial"><br>
+        <label for="velfinal"> Velocidad final [m/s]:</label>
+        <input type="number" id="velfinal">
+        </p>
+        <p>
+        <button type="button">Calcular aceleracion</button>
+
+        </p>
+    </fieldset>
 
 
 
