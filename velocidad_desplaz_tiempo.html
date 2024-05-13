@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Calculadora de aceleracion</title>
+    <meta content="Catalina Rubies" name="autor">
+    <meta content="Pagina web para calcular aceleracion" name="descripcion">
+    <meta content="aceleracion, velocidad, tiempo, posicion" name="palabras clave">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+
+</head>
+<body>
+    <nav>
+        <a href="file:///C:/Users/ggrub/Desktop/Labcomputacion2/proyecto2024-rubies/index.html" target="_self">Inicio</a>
+    </nav>
+<header>
+    <h2> Calculadora de aceleracion en funcion de la velocidad inicial, desplazamiento y tiempo</h2>
+</header>
+
+<section class="info">
+    <p>
+    Se describe la posición del cuerpo en función de la posicion inicial,la velocidad inicial, la aceleracion y el tiempo:
+    xf = x0 + v0t + 1/2 at²
+    De alli despejamos la aceleracion:
+    a = (2(xf - x0)) / t² - 2v0/t
+    </p>
+</section>
+
+    <fieldset class="ingresar">
+        <legend>Ingresar los datos requeridos:</legend>
+        <p>
+        <label for="tiempoi"> Tiempo inicial [s]:</label>
+        <input type="number"id="tiempoi"><br>
+        <label for="tiempof"> Tiempo final [s]:</label>
+        <input type="number" id="tiempof">
+        </p>
+        <p>
+        <label for="velinicial"> Velocidad inicial [m/s]:</label>
+        <input type="number"id="velinicial"><br>
+        <label for="velfinal"> Velocidad final [m/s]:</label>
+        <input type="number" id="velfinal">
+        </p>
+        <p>
+        <button type="button">Calcular aceleracion</button>
+
+        </p>
+    </fieldset>
+
+
+
+</body>
