@@ -7,6 +7,10 @@ Pagina de resolucion de calculo sobre la aceleracion, teniendo en cuenta velocid
 * HTML5
 * CSS
 
+### Link a gh page
+https://ucc-labcompu2.github.io/proyecto2024-rubies/
+
+
 
 
 
