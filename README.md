@@ -1,40 +1,26 @@
-# Calculadora de aceleracion
+# Calculadora de aceleración
 
-<strong>Indice</strong>
-<ul>
-    <li><a href="#descripcion">Descripción de la página</a></li>
-    <li><a href="#autor">Autor</a></li>
-    <li><a href="#tecnologias">Tecnologías usadas</a></li>
-    <li><a href="#link">Link a gh page</a></li>
-</ul>
+**Índice**
+- [Descripción de la página](#descripcion)
+- [Autor](#autor)
+- [Tecnologías usadas](#tecnologias)
+- [Link a gh page](#link)
 
+## Descripción de la página
+Página creada para el cálculo de la aceleración, dependiendo de los datos proporcionados.
 
-<h2 id="descripcion">Descripción de la página</h2>
-Pagina creada para el calculo de la aceleracion, dependiendo de los datos proporcionados.
-<table>
-  <tr>
-    <td colspan="3">Calcular la aceleración en función de:</td>
-  </tr>
-  <tr>
-    <td>La velocidad inicial, velocidad final y tiempo</td>
-    <td>La velocidad inicial, desplazamiento y tiempo</td>
-    <td>La velocidad inicial, velocidad final y desplazamiento</td>
-  </tr>
-</table>
+| Calcular la aceleración en función de:                  |
+|---------------------------------------------------------|
+| La velocidad inicial, velocidad final y tiempo          |
+| La velocidad inicial, desplazamiento y tiempo           |
+| La velocidad inicial, velocidad final y desplazamiento  |
 
 
+## Autor: Catalina Rubies
 
-
-<h2 id="autor">Autor : Catalina Rubies</h2>
-
-<h2 id="tecnologias">Tecnologias usadas:</h2>
+## Tecnologías usadas:
 * HTML5
 * CSS
 
-<h2 id="link">Link a gh page</h2>
-https://ucc-labcompu2.github.io/proyecto2024-rubies/
-
-
-
-
-
+## Link a gh page
+[https://ucc-labcompu2.github.io/proyecto2024-rubies/](https://ucc-labcompu2.github.io/proyecto2024-rubies/)
