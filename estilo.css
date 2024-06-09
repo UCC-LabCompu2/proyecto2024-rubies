@@ -1,41 +1,64 @@
+/* pseudoclase */
+h1:hover {
+    font-size: 210%;
+}
+
+button:active {
+    background-color: rgb(11, 94, 172);
+}
 
 body {
-    background-image: url('Imagenes/imagen_fondo2.jpg'); 
-    background-size: cover; 
+    background-image: url('Imagenes/imagen_fondo2.jpg');
+    background-size: cover;
+}
+
+/* agrego una imagen en la esquina izquierda */
+.agrego_im {
+    position: relative;
+}
+
+.agrego_im img {
+    position: absolute; /* Establece la posición absoluta para la imagen */
+    top: 0; /* Coloca la imagen en la parte superior del contenedor */
+    left: 0; /* Coloca la imagen en la esquina izquierda del contenedor */
+    width: 6cm; /* 5 cm convertidos a píxeles (5 cm * 37.8 px/cm) */
+    height: 6cm;
 }
 
 
-h1{
-    color:antiquewhite;
+h1 {
+    color: antiquewhite;
     font-family: 'Nuosu SIL Bold', serif;
     text-align: right;
 
 }
-h2{
-    color:antiquewhite;
+
+h2 {
+    color: antiquewhite;
     font-family: 'Nuosu SIL', serif;
     text-align: right;
 }
-nav{
-    color:antiquewhite;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+nav {
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
-    font-size:larger;
+    font-size: larger;
 }
 
-a{
+a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 /* Empleo estilo por ID */
-#info{ 
+#info {
     font-family: 'Nuosu SIL', serif;
     font-size: large;
     text-align: center;
     float: right;
     width: 70%;
-    color:rgb(177, 177, 177);
+    color: rgb(177, 177, 177);
 }
 
 .logo {
@@ -45,13 +68,13 @@ a{
 }
 
 .logo1 {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
 .info2 {
     font-family: 'Nuosu SIL', serif;
-    color:rgb(177, 177, 177);
+    color: rgb(177, 177, 177);
     font-size: large;
     text-align: center;
     position: absolute;
@@ -62,7 +85,7 @@ a{
 }
 
 .ingresar {
-    color:antiquewhite;
+    color: antiquewhite;
     font-size: x-large;
     text-align: center;
     position: absolute;
@@ -71,21 +94,18 @@ a{
     transform: translate(-50%, -50%);
 }
 
-button{
+button {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-    color:black;
+    color: black;
 
 }
 
-
-
-
 .opciones {
 
-    color:antiquewhite;
+    color: antiquewhite;
     top: 80%;
-    width: 100%; 
+    width: 100%;
     text-align: center;
     position: fixed;
 
@@ -94,12 +114,16 @@ button{
 .cuadro {
     background-color: rgba(128, 128, 128, 0.753);
     font-size: large;
-    font-style:normal;
-    width: 30%; 
-    height: 60px; 
+    font-style: normal;
+    width: 30%;
+    height: 60px;
     border-style: groove;
     border-radius: 4px;
-    border-color: antiquewhite; 
-    display: inline-block; 
-    margin: 0 5px; 
+    border-color: antiquewhite;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.cuadro:hover {
+    font-size: 120%;
 }
