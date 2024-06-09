@@ -18,10 +18,10 @@ body {
 }
 
 .agrego_im img {
-    position: absolute; /* Establece la posición absoluta para la imagen */
-    top: 0; /* Coloca la imagen en la parte superior del contenedor */
-    left: 0; /* Coloca la imagen en la esquina izquierda del contenedor */
-    width: 6cm; /* 5 cm convertidos a píxeles (5 cm * 37.8 px/cm) */
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 6cm; 
     height: 6cm;
 }
 
