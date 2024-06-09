@@ -28,7 +28,8 @@ a{
     color:antiquewhite;
 }
 
-.info{
+/* Empleo estilo por ID */
+#info{ 
     font-family: 'Nuosu SIL', serif;
     font-size: large;
     text-align: center;
