@@ -1,9 +1,10 @@
    /**
-   * Validar que no sean valores negativos y calcular aceleracion
+   * Validar que no sean valores negativos y calcular aceleraciones
    * @method v_des_t
    * @param {number} posicionInicial - se almacena posicion inicial
    * @param {number} posicionFinal - se almacena posicion final
    * @param {number} velocidadInicial - se almacena velocidad inicial
+   * @param {number} velocidadFinal - se almacena velocidad final
    * @param {number} tiempo - se almacena el tiempo
    * @return Aceleracion
    */
