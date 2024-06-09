@@ -8,7 +8,7 @@
    * @return Aceleracion
    */
 
-   function v_des_t(){
+   const v_des_t = () => {
     var posicionInicial = Number(document.getElementById("posicioni").value);
     var posicionFinal = Number(document.getElementById("posicionf").value);
     var velocidadInicial = Number(document.getElementById("velinicial").value);
@@ -27,7 +27,7 @@
 
    }
 
-   function vel_des(){
+   const vel_des = () => {
     var posicionInicial = Number(document.getElementById("posicioni").value);
     var posicionFinal = Number(document.getElementById("posicionf").value);
     var velocidadInicial = Number(document.getElementById("velocidadi").value);
@@ -47,7 +47,7 @@
 
    }
 
-   function vel_t(){
+   const vel_t = () => {
     var velocidadInicial = Number(document.getElementById("velinicial").value);
     var velocidadFinal = Number(document.getElementById("velfinal").value);
     var tiempoI = Number(document.getElementById("tiempoi").value);
