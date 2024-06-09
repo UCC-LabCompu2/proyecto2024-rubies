@@ -1,3 +1,4 @@
+
 body {
     background-image: url('Imagenes/imagen_fondo2.jpg'); 
     background-size: cover; 
@@ -6,13 +7,13 @@ body {
 
 h1{
     color:antiquewhite;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nuosu SIL Bold', serif;
     text-align: right;
 
 }
 h2{
     color:antiquewhite;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nuosu SIL', serif;
     text-align: right;
 }
 nav{
@@ -28,7 +29,7 @@ a{
 }
 
 .info{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nuosu SIL', serif;
     font-size: large;
     text-align: center;
     float: right;
@@ -48,7 +49,7 @@ a{
 }
 
 .info2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nuosu SIL', serif;
     color:rgb(177, 177, 177);
     font-size: large;
     text-align: center;
