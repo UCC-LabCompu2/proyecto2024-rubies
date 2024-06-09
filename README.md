@@ -8,9 +8,8 @@ Es una herramienta práctica para resolver problemas de física relacionados con
 #### Simple vista de la pagina:
 | Calculadora de aceleración |
 | --------------------------- |
-| [en función de ΔV y Δt] |
-| [en función de V₀, ΔX y t] |
-| [en función de ΔV y ΔX] |
+| [en función de ΔV y Δt] | [en función de V₀, ΔX y t] | [en función de ΔV y ΔX] |
+
 
 
 
