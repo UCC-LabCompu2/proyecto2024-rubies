@@ -1,19 +1,23 @@
-# Calculadora de aceleración
+# **CALCULADORA DE ACELERACIÓN**
+### :woman_student: Autor: Catalina Rubies
 
-**Índice**
-- [Descripción de la página](#descripcion)
-- [Autor](#autor)
-- [Tecnologías usadas](#tecnologias)
-- [Link a gh page](#link)
+## _Proyecto para Laboratorio de Computacion 2_
+La página web permite calcular la aceleración de un objeto en movimiento de manera rápida y sencilla. El usuario elige entre tres opciones: ingresar velocidad inicial y final con el tiempo, velocidad inicial con desplazamiento y tiempo, o velocidad inicial, velocidad final, desplazamiento inicial y final. Luego, en la página seleccionada, ingresa los datos y obtiene el resultado de la aceleración.
+Es una herramienta práctica para resolver problemas de física relacionados con la aceleración.
 
-## Descripción de la página {#descripcion}
-Página creada para el cálculo de la aceleración, dependiendo de los datos proporcionados.
+#### Simple vista de la pagina:
+| Calculadora de aceleración |
+| --------------------------- |
+| [en función de ΔV y Δt] |
+| [en función de V₀, ΔX y t] |
+| [en función de ΔV y ΔX] |
 
-## Autor: Catalina Rubies {#autor}
 
-## Tecnologías usadas: {#tecnologias}
+
+### Tecnologías usadas:
 - HTML5
 - CSS
+- JS
 
-## Link a gh page {#link}
+### Link a gh page
 [https://ucc-labcompu2.github.io/proyecto2024-rubies/](https://ucc-labcompu2.github.io/proyecto2024-rubies/)
