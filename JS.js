@@ -1,10 +1,9 @@
    /**
-   * Validar que no sean valores negativos y calcular aceleraciones
+   * Validar que no sean valores negativos y calcular aceleracion en funcion del desplazamiento, la velocidad inicial y el tiempo
    * @method v_des_t
    * @param {number} posicionInicial - se almacena posicion inicial
    * @param {number} posicionFinal - se almacena posicion final
    * @param {number} velocidadInicial - se almacena velocidad inicial
-   * @param {number} velocidadFinal - se almacena velocidad final
    * @param {number} tiempo - se almacena el tiempo
    * @return Aceleracion
    */
@@ -29,6 +28,15 @@
     }
 
    }
+  /**
+   * Validar que no sean valores negativos y calcular aceleracion en funcion del desplazamiento, la velocidad inicial y velocidad final
+   * @method v_des_t
+   * @param {number} posicionInicial - se almacena posicion inicial
+   * @param {number} posicionFinal - se almacena posicion final
+   * @param {number} velocidadInicial - se almacena velocidad inicial
+   * @param {number} velocidadFinal - se almacena velocidad final
+   * @return Aceleracion
+   */
 
    const vel_des = () => {
     var posicionInicial = Number(document.getElementById("posicioni").value);
@@ -50,6 +58,16 @@
     }
 
    }
+
+     /**
+   * Validar que no sean valores negativos y calcular aceleracion en funcion de la velocidad inicial y el tiempo
+   * @method v_des_t
+   * @param {number} posicionInicial - se almacena posicion inicial
+   * @param {number} posicionFinal - se almacena posicion final
+   * @param {number} tiempoInicial - se almacena tiempo inicial
+   * @param {number} tiempoFinal - se almacena tiempo final
+   * @return Aceleracion
+   */
 
    const vel_t = () => {
     var velocidadInicial = Number(document.getElementById("velinicial").value);
