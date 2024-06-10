@@ -15,7 +15,9 @@
     var velocidadInicial = Number(document.getElementById("velinicial").value);
     var tiempo = Number(document.getElementById("tiempo").value);
 
-    if( velocidadInicial<0 ||tiempo<0){
+    if( velocidadInicial == "" || posicionInicial == "" || posicionFinal == "" || tiempo == "" ){
+        alert("Completa todos los campos!");
+    } else if( velocidadInicial<0 ||tiempo<0){
         alert("Recuerda no ingresar valores negativos!");
         document.getElementById("velinicial").value = "";
         document.getElementById("posicioni").value = "";
@@ -33,9 +35,10 @@
     var posicionFinal = Number(document.getElementById("posicionf").value);
     var velocidadInicial = Number(document.getElementById("velocidadi").value);
     var velocidadFinal = Number(document.getElementById("velocidadf").value);
-    
 
-    if(velocidadInicial<0 || velocidadFinal<0){
+    if (posicionInicial == "" || posicionFinal== "" || velocidadInicial == "" || velocidadFinal== "" ){
+        alert("Completa todos los campos!");
+    } else if(velocidadInicial<0 || velocidadFinal<0){
         alert("Recuerda no ingresar valores negativos!");
         document.getElementById("posicioni").value = "";
         document.getElementById("posicionf").value = "";
@@ -53,9 +56,12 @@
     var velocidadFinal = Number(document.getElementById("velfinal").value);
     var tiempoI = Number(document.getElementById("tiempoi").value);
     var tiempof = Number(document.getElementById("tiempof").value);
-    
 
-    if(velocidadInicial<0 || velocidadFinal<0){
+
+    if (velocidadInicial == "" || velocidadFinal == "" || tiempoI == "" ||  tiempof == "" ){
+        alert("Completa todos los campos");
+
+    } else if(velocidadInicial<0 || velocidadFinal<0){
         alert("Recuerda no ingresar valores negativos!");
         document.getElementById("velinicial").value = "";
         document.getElementById("velfinal").value = "";
@@ -73,4 +79,3 @@
     }
 
    }
-
