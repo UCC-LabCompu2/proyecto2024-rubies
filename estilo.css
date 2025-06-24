@@ -7,59 +7,64 @@
 }
 
 body {
-    background-color: #f4f8fb;
-    color: #333;
+    background-color: #f0f4f8;
+    color: #2c3e50;
     padding: 20px;
 }
 
+/* NAVBAR */
 nav {
-    background-color: #003366;
-    padding: 10px;
+    background-color: #1e3a5f;
+    padding: 12px;
     text-align: center;
 }
 
 nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 20px;
-    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #0055aa;
+    background-color: #2d5d89;
 }
 
+/* HEADER */
 header {
-    background-color: #e6f0fa;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #eaf3fb;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 header h2 {
-    font-size: 1.5rem;
-    color: #003366;
+    font-size: 1.7rem;
+    color: #1e3a5f;
 }
 
+/* INFO SECTION */
 section#info {
-    margin: 20px 0;
-    padding: 15px;
     background-color: #ffffff;
-    border-left: 6px solid #0099cc;
-    border-radius: 6px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 6px solid #00aaff;
+    border-radius: 8px;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
+/* FORM FIELDSET */
 fieldset.ingresar {
     background-color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
-    border: 2px solid #cccccc;
-    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    border: 2px solid #ccd6e0;
+    border-radius: 10px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -67,46 +72,55 @@ fieldset.ingresar {
 
 fieldset legend {
     font-weight: bold;
-    color: #003366;
+    color: #1e3a5f;
+    font-size: 1.1rem;
 }
 
 fieldset label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
+    color: #333;
 }
 
 fieldset input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 0.95rem;
 }
 
+/* BOTÓN */
 button {
-    background-color: #007acc;
+    background-color: #00aaff;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #005f99;
+    background-color: #008ecc;
 }
 
+/* RESULTADO */
 #resultado {
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: bold;
+    font-size: 1.1rem;
+    color: #1e3a5f;
 }
 
+/* IMAGEN DECORATIVA */
 .agrego_im img {
-    max-width: 60px;
+    max-width: 40px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto 0;
+    opacity: 0.7;
 }
