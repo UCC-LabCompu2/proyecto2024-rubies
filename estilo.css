@@ -183,3 +183,13 @@ form button {
     display: block;
     margin: 20px auto 0;
 }
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1e3a5f;
+    color: white;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9rem;
+}
