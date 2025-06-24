@@ -8,6 +8,7 @@
     <meta name="description"
         content="Calculadora para aplicar la Segunda Ley de Newton y obtener la fuerza a partir de masa y aceleración.">
     <meta name="keywords" content="física, newton, fuerza, aceleración, masa, calculadora, ley de newton">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
@@ -44,20 +45,20 @@
                         <legend>Ingresar datos</legend>
 
                         <label for="masa">Masa (kg):</label>
-                        <input type="number" id="masa" name="masa" placeholder="Ej: 10" size="15" maxlength="5"
-                            required>
+                        <input type="number" id="masa" name="masa" placeholder="Ej: 10" size="15" min="0" max="99999"
+                            step="any" required>
 
                         <label for="aceleracion">Aceleración (m/s²):</label>
-                        <input type="number" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8" size="15"
-                            maxlength="5" required>
+                        <input type="number" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8" size="15" min="0"
+                            max="99999" step="any" required>
 
                         <label for="tiempo">Tiempo (s):</label>
-                        <input type="number" id="tiempo" name="tiempo" placeholder="Ej: 2" size="15" maxlength="5"
-                            required>
+                        <input type="number" id="tiempo" name="tiempo" placeholder="Ej: 2" size="15" min="0" max="99999"
+                            step="any" required>
 
-                        <button type="submit">Calcular Fuerza</button>
+                        <button type="submit" aria-label="Calcular fuerza">Calcular Fuerza</button>
 
-                        <div id="resultado"></div>
+                        <div id="resultado" aria-live="polite"></div>
                     </fieldset>
                 </form>
             </section>
