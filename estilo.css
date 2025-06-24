@@ -103,3 +103,10 @@ button:hover {
     margin-top: 15px;
     font-weight: bold;
 }
+
+.agrego_im img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
