@@ -2,59 +2,88 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>CALCULADORA DE ACELERACIÓN</title>
-    <meta content="Catalina Rubies" name="autor">
-    <meta content="Pagina web para calcular aceleracion" name="descripcion">
-    <meta content="aceleracion, velocidad, tiempo, posicion" name="palabras clave">
-    <link rel="stylesheet" href="estilo.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Imagenes/favicon.png">
-
+    <meta charset="utf-8">
+    <title>Calculadora de Fuerza - Ley de Newton</title>
+    <meta name="author" content="Catalina Rubies">
+    <meta name="description"
+        content="Calculadora para aplicar la Segunda Ley de Newton y obtener la fuerza a partir de masa y aceleración.">
+    <meta name="keywords" content="física, newton, fuerza, aceleración, masa, calculadora, ley de newton">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <header>
-        <h1>CALCULADORA DE ACELERACIÓN</h1>
-    </header>
 
-    <div class="agrego_im">
-        <img src="Imagenes/agregar_imagen.png" title="Las Leyes de Newton han servido para explicar y describir el movimiento de los cuerpos sometidos a una fuerza y una determinada aceleración. Estos principios fueron postulados en 1687 en su obra Principios matemáticos de la filosofía natural.">
+    <div class="estructura">
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="formulas.html">Fórmulas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <header>
+            <h1>Calculadora de Fuerza</h1>
+            <div class="agrego_im">
+                <img src="Imagenes/agregar_imagen.png" alt="Icono Newton" title="Ley de Newton">
+            </div>
+        </header>
+
+        <main>
+            <section id="info">
+                <p>Calcula la fuerza utilizando la fórmula: <strong>F = m × a</strong>.</p>
+                <ul>
+                    <li><strong>F:</strong> Fuerza (N)</li>
+                    <li><strong>m:</strong> Masa (kg)</li>
+                    <li><strong>a:</strong> Aceleración (m/s²)</li>
+                </ul>
+            </section>
+
+            <section>
+                <form onsubmit="calcularFuerza(); return false;">
+                    <fieldset class="ingresar">
+                        <legend>Ingresar datos</legend>
+
+                        <label for="masa">Masa (kg):</label>
+                        <input type="number" id="masa" name="masa" placeholder="Ej: 10" size="15" maxlength="5"
+                            required>
+
+                        <label for="aceleracion">Aceleración (m/s²):</label>
+                        <input type="number" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8" size="15"
+                            maxlength="5" required>
+
+                        <label for="tiempo">Tiempo (s):</label>
+                        <input type="number" id="tiempo" name="tiempo" placeholder="Ej: 2" size="15" maxlength="5"
+                            required>
+
+                        <button type="submit">Calcular Fuerza</button>
+
+                        <div id="resultado"></div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <canvas id="grafico" width="400" height="200"
+                    style="margin-top: 20px; background-color: #ffffff; border: 1px solid #ccc;"></canvas>
+            </section>
+        </main>
+
     </div>
 
-    <section id="info">
-        <p>
-            La aceleración es el cambio en la velocidad de un cuerpo por unidad de tiempo.
-            Si un cuerpo experimenta un cambio en su velocidad, significa que hay una aceleración. Si no hay
-            aceleración, la velocidad se mantiene constante.
-            La aceleración es una magnitud vectorial: tiene magnitud y dirección.
-            En el caso del movimiento rectilíneo, la dirección de la aceleración es siempre la misma que la dirección
-            del movimiento del cuerpo, y el cuerpo puede experimentar un aumento en la velocidad o una desaceleración.
-        </p>
-    </section>
-    <div class="info2">
-        <p> A partir de los datos que tenemos, podemos calcular la aceleración en función de: </p>
-    </div>
+    <script>
+        function calcularFuerza() {
+            const masa = parseFloat(document.getElementById("masa").value);
+            const aceleracion = parseFloat(document.getElementById("aceleracion").value);
+            const resultado = masa * aceleracion;
 
-    <section class="opciones">
-        <div class="cuadro">
-            <a href="velocidades_tiempo.html">
-                Calcular en función de la velocidad inicial, velocidad final y tiempo
-            </a>
-        </div>
-        <div class="cuadro">
-            <a href="velocidad_desplaz_tiempo.html">
-                Calcular en función de la velocidad inicial, desplazamiento y tiempo
-            </a>
-        </div>
-        <div class="cuadro">
-            <a href="velocidades_desplaz.html">
-                Calcular en función de la velocidad inicial, velocidad final y desplazamiento
-            </a>
-        </div>
-    </section>
-
-
+            const salida = document.getElementById("resultado");
+            if (!isNaN(resultado)) {
+                salida.textContent = `La fuerza resultante es: ${resultado.toFixed(2)} N`;
+            } else {
+                salida.textContent = "Por favor, ingresá valores válidos.";
+            }
+        }
+    </script>
 
 </body>
 
