@@ -40,17 +40,18 @@
             </section>
 
             <section>
-                <form>
+                <form id="form-fuerza">
                     <fieldset class="ingresar">
                         <legend>Ingresar datos</legend>
 
                         <label for="masa">Masa (kg):</label>
-                        <input type="text" id="masa" name="masa" placeholder="Ej: 10" size="15" maxlength="5"
-                            pattern="^\d+(\.\d+)?$" required>
+                        <input type="text" id="masa" name="masa" placeholder="Ej: 10 (usar punto para decimales)"
+                            size="15" maxlength="5" pattern="^\d+(\.\d+)?$" required>
 
                         <label for="aceleracion">Aceleración (m/s²):</label>
-                        <input type="text" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8 (usar punto)"
-                            size="15" maxlength="5" pattern="^\d+(\.\d+)?$" required>
+                        <input type="text" id="aceleracion" name="aceleracion"
+                            placeholder="Ej: 9.8 (usar punto para decimales)" size="15" maxlength="5"
+                            pattern="^\d+(\.\d+)?$" required>
 
                         <button type="submit" aria-label="Calcular fuerza">Calcular Fuerza</button>
 
