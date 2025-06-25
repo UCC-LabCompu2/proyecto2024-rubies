@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
 
             const nombre = document.getElementById("nombre").value.trim();
-            const correo = document.getElementById("email").value.trim();
+            const email = document.getElementById("email").value.trim();
             const mensaje = document.getElementById("mensaje").value.trim();
 
-            if (nombre && correo && mensaje) {
+            if (nombre && email && mensaje) {
                 alert("¡Mensaje enviado!");
                 formContacto.reset(); // Opcional: limpia los campos
             }
