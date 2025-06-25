@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (formContacto) {
         formContacto.addEventListener("submit", (e) => {
             e.preventDefault();
-            console.log("Submit atrapado, formulario no enviado.");
 
             const nombre = document.getElementById("nombre").value.trim();
             const email = document.getElementById("email").value.trim();
