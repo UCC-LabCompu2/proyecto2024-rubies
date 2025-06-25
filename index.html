@@ -40,21 +40,17 @@
             </section>
 
             <section>
-                <form onsubmit="calcularFuerza(); return false;">
+                <form>
                     <fieldset class="ingresar">
                         <legend>Ingresar datos</legend>
 
                         <label for="masa">Masa (kg):</label>
-                        <input type="number" id="masa" name="masa" placeholder="Ej: 10" size="15" min="0" max="99999"
-                            step="any" required>
+                        <input type="text" id="masa" name="masa" placeholder="Ej: 10" size="15" maxlength="5"
+                            pattern="^\d+(\.\d+)?$" required>
 
                         <label for="aceleracion">Aceleración (m/s²):</label>
-                        <input type="number" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8" size="15" min="0"
-                            max="99999" step="any" required>
-
-                        <label for="tiempo">Tiempo (s):</label>
-                        <input type="number" id="tiempo" name="tiempo" placeholder="Ej: 2" size="15" min="0" max="99999"
-                            step="any" required>
+                        <input type="text" id="aceleracion" name="aceleracion" placeholder="Ej: 9.8 (usar punto)"
+                            size="15" maxlength="5" pattern="^\d+(\.\d+)?$" required>
 
                         <button type="submit" aria-label="Calcular fuerza">Calcular Fuerza</button>
 
@@ -71,20 +67,7 @@
 
     </div>
 
-    <script>
-        function calcularFuerza() {
-            const masa = parseFloat(document.getElementById("masa").value);
-            const aceleracion = parseFloat(document.getElementById("aceleracion").value);
-            const resultado = masa * aceleracion;
-
-            const salida = document.getElementById("resultado");
-            if (!isNaN(resultado)) {
-                salida.textContent = `La fuerza resultante es: ${resultado.toFixed(2)} N`;
-            } else {
-                salida.textContent = "Por favor, ingresá valores válidos.";
-            }
-        }
-    </script>
+    <script src="calculos.js"></script>
 
 </body>
 
