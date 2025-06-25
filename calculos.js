@@ -36,4 +36,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // --- Animación simple en canvas ---
+    const canvas = document.getElementById("grafico");
+    if (canvas) {
+        const ctx = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+
+        let x = 0;
+        let speed = 2;
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Dibuja círculo azul que se mueve horizontalmente
+            ctx.beginPath();
+            ctx.arc(x, height / 2, 20, 0, Math.PI * 2);
+            ctx.fillStyle = "#007BFF";
+            ctx.fill();
+            ctx.closePath();
+
+            x += speed;
+            if (x > width || x < 0) speed = -speed;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    }
 });
