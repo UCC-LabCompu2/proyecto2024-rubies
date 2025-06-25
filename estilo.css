@@ -10,6 +10,11 @@ body {
     background-color: #f0f4f8;
     color: #2c3e50;
     padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAVBAR */

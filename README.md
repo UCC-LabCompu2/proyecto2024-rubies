@@ -1,28 +1,56 @@
-# **CALCULADORA DE ACELERACIÓN**
-### :woman_student: Autor: Catalina Rubies
+# Proyecto Web - Laboratorio de Computación 2
 
-## _Proyecto para Laboratorio de Computacion 2_
-La página web permite calcular la aceleración de un objeto en movimiento de manera rápida y sencilla. El usuario elige entre tres opciones: ingresar velocidad inicial y final con el tiempo, velocidad inicial con desplazamiento y tiempo, o velocidad inicial, velocidad final, desplazamiento inicial y final. Luego, en la página seleccionada, ingresa los datos y obtiene el resultado de la aceleración.
-Es una herramienta práctica para resolver problemas de física relacionados con la aceleración.
+## Índice
 
-- [Simple vista de la pagina](#simple-vista-de-la-pagina)
-- [Tecnologías usadas](#Tecnologías-usadas)
-- [Link a gh page](#Link-a-gh-page)
+- [Descripción](#descripción)
+- [Autor](#autor)
+- [Sitio Web](#sitio-web)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contenido de la Página](#contenido-de-la-página)
+- [Tabla de Archivos Principales](#tabla-de-archivos-principales)
 
-#### Simple vista de la pagina:
-| Calculadora de aceleración |
-| --------------------------- |
-| [en función de ΔV y Δt] |
-| [en función de V₀, ΔX y t] |
-| [en función de ΔV y ΔX] |
+## Descripción
+
+Este proyecto es una página web desarrollada como parte de la materia **Laboratorio de Computación 2**. Su objetivo es presentar conceptos básicos de física, incluyendo una calculadora de fuerza, información teórica y un formulario de contacto.
+
+## Autor
+
+- **Catalina Rubies**
+- Correo: 2211430@ucc.edu.ar
+
+## Sitio Web
+
+Link a gh page
+
+- 🌐 [https://ucc-labcompu2.github.io/proyecto2024-rubies/](https://ucc-labcompu2.github.io/proyecto2024-rubies/)
 
 
+## Tecnologías Utilizadas
+
+### Frontend
+
+- **HTML5**: estructura de la página
+- **CSS**: estilos visuales
+- **JavaScript**: funcionalidades dinámicas como cálculo de fuerza y validación de formularios
+
+## Contenido de la Página
+
+1. **Inicio**: presentación general del sitio.
+2. **Fórmulas**: incluye la fórmula de fuerza (F = m · a) y una calculadora interactiva.
+3. **Contacto**: formulario para enviar mensajes simulados y datos del autor.
+4. **Responsivo**: diseño adaptable para distintos tamaños de pantalla.
 
 
-### Tecnologías usadas:
-- HTML5
-- CSS
-- JS
+## Tabla de Archivos Principales
 
-### Link a gh page
-[https://ucc-labcompu2.github.io/proyecto2024-rubies/](https://ucc-labcompu2.github.io/proyecto2024-rubies/)
+| Archivo / Carpeta | Descripción                                                        |
+|-------------------|------------------------------------------------------------------|
+| `imagenes/`       | Carpeta que contiene imágenes usadas en el sitio                  |
+| `mockup/`         | Carpeta con mockups o diseños preliminares                        |
+| `sketch/`         | Carpeta con sketches o bocetos relacionados al proyecto          |
+| `README.md`       | Archivo de documentación principal del proyecto                   |
+| `index.html`      | Página principal del sitio                                        |
+| `formulas.html`   | Calculadora de fuerza con fórmula física                          |
+| `contacto.html`   | Formulario de contacto con datos del autor                        |
+| `estilo.css`      | Hojas de estilo del sitio web                                     |
+| `calculos.js`     | Funciones JavaScript para lógica de formularios y cálculos       |
