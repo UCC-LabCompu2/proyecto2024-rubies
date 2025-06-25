@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (nombre && email && mensaje) {
                 alert("¡Mensaje enviado!");
-                formContacto.reset(); // Opcional: limpia los campos
+                formContacto.reset();
             }
         });
     }
