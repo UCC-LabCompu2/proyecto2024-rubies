@@ -34,12 +34,15 @@
         <main>
             <section id="info">
                 <p>Calcula la fuerza utilizando la fórmula: <strong>F = m × a</strong>.</p>
+
+                <p>Variables:</p>
                 <ul>
                     <li><strong>F:</strong> Fuerza (N)</li>
                     <li><strong>m:</strong> Masa (kg)</li>
                     <li><strong>a:</strong> Aceleración (m/s²)</li>
                 </ul>
             </section>
+
 
             <section>
                 <form id="form-fuerza">
@@ -62,8 +65,22 @@
                 </form>
             </section>
 
-            <section>
+            <section class="canvas-explicacion">
                 <canvas id="grafico" width="400" height="200"></canvas>
+                <aside>
+                    <p><strong>¿Qué muestra la animación?</strong></p>
+                    <p>Esta animación representa visualmente el resultado de la fuerza calculada.</p>
+                    <p>Una vez que se calcula la fuerza:</p>
+                    <ul>
+                        <li>Se dibuja un bloque que representa un objeto.</li>
+                        <li>Una flecha indica la fuerza aplicada sobre él.</li>
+                        <li>El bloque se mueve más rápido cuanto mayor sea la fuerza.</li>
+                    </ul>
+                    <p>Para una mejor visualización, la animación cambia proporcionalmente hasta una fuerza de 10
+                        Newtons.</p>
+                    <p>A partir de ese valor, la velocidad y longitud de la flecha se mantienen constantes, para evitar
+                        que el objeto se salga del gráfico.</p>
+                </aside>
             </section>
         </main>
 
