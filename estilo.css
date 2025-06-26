@@ -213,3 +213,27 @@ section.canvas-explicacion aside {
     font-size: 0.95rem;
     line-height: 1.4;
 }
+
+#formulas-principales {
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#formulas-principales table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+#formulas-principales th,
+#formulas-principales td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#formulas-principales th {
+    background-color: #f5f5f5;
+}
