@@ -8,7 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
     let posX = 0;
     let ctx, width, height;
 
-    // --- Función para iniciar animación en canvas ---
+    /**
+     * Calcula la fuerza aplicando la segunda ley de Newton (F = m * a).
+     * 
+     * @method calcularFuerza
+     * @param {number} masa - Masa del objeto en kilogramos.
+     * @param {number} aceleracion - Aceleración en m/s².
+     * @return {number} La fuerza resultante en Newtons.
+     */
+    const calcularFuerza = (masa, aceleracion) => {
+        return masa * aceleracion;
+    };
+
+    /**
+     * Inicia la animación del canvas, dibujando un bloque que se mueve horizontalmente
+     * y una flecha proporcional a la fuerza aplicada.
+     * 
+     * @method iniciarCanvas
+     * @return {void}
+     */
     const iniciarCanvas = () => {
         if (!canvas) return;
         ctx = canvas.getContext("2d");
@@ -23,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ctx.fillRect(posX, height / 2 - 15, 50, 30);
 
             // Dibujar flecha proporcional a la fuerza
-            const flechaLargo = Math.min(fuerzaActual * 10, 100); // límite visual
+            const flechaLargo = Math.min(fuerzaActual * 10, 100);
             ctx.beginPath();
             ctx.moveTo(posX, height / 2);
             ctx.lineTo(posX + flechaLargo, height / 2);
@@ -35,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ctx.stroke();
 
             // Mover bloque
-            posX += Math.min(fuerzaActual * 0.5, 5); // velocidad proporcional, límite máx.
+            posX += Math.min(fuerzaActual * 0.5, 5);
 
             if (posX > width) posX = 0;
 
@@ -46,6 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     if (formFuerza) {
+        /**
+         * Maneja el envío del formulario para calcular la fuerza.
+         * Verifica los valores ingresados de masa y aceleración, muestra el resultado
+         * y actualiza la animación del canvas.
+         * 
+         * @param {Event} e - Evento de envío del formulario.
+         * @return {void}
+         */
         formFuerza.addEventListener("submit", (e) => {
             e.preventDefault();
 
@@ -53,11 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const aceleracion = parseFloat(document.getElementById("aceleracion").value);
 
             if (!isNaN(masa) && !isNaN(aceleracion) && masa >= 0 && aceleracion >= 0) {
-                const fuerza = masa * aceleracion;
+                const fuerza = calcularFuerza(masa, aceleracion);
                 resultadoDiv.textContent = `La fuerza resultante es: ${fuerza.toFixed(2)} N`;
 
                 fuerzaActual = fuerza;
-                posX = 0; // reiniciar animación con nueva fuerza
+                posX = 0;
             } else {
                 resultadoDiv.textContent = "Por favor, ingresá valores válidos y positivos.";
             }
@@ -67,6 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- Formulario de contacto ---
     const formContacto = document.getElementById("form-contacto");
     if (formContacto) {
+        /**
+        * Maneja el envío del formulario de contacto.
+        * Verifica que todos los campos estén completos, muestra un mensaje de confirmación
+        * y resetea el formulario.
+        * 
+        * @param {Event} e - Evento generado al enviar el formulario.
+        * @return {void} No retorna valor.
+        */
+
         formContacto.addEventListener("submit", (e) => {
             e.preventDefault();
 
@@ -81,6 +116,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Iniciar canvas solo si existe en el HTML
     iniciarCanvas();
 });
