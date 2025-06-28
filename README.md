@@ -11,7 +11,7 @@
 
 ## Descripción
 
-Este proyecto es una página web desarrollada como parte de la materia **Laboratorio de Computación 2**. Su objetivo es presentar conceptos básicos de física, incluyendo una calculadora de fuerza, información teórica y un formulario de contacto.
+Página web desarrollada como parte de la materia **Laboratorio de Computación 2**. Su objetivo es presentar conceptos básicos de física, incluyendo una calculadora de fuerza, información teórica y un formulario de contacto.
 
 ## Autor
 
@@ -27,18 +27,15 @@ Link a gh page
 
 ## Tecnologías Utilizadas
 
-### Frontend
-
-- **HTML5**: estructura de la página
-- **CSS**: estilos visuales
-- **JavaScript**: funcionalidades dinámicas como cálculo de fuerza y validación de formularios
+### HTML5
+### CSS
+### JavaScript
 
 ## Contenido de la Página
 
-1. **Inicio**: presentación general del sitio.
-2. **Fórmulas**: incluye la fórmula de fuerza (F = m · a) y una calculadora interactiva.
+1. **Inicio**: calculadora interactiva.
+2. **Fórmulas**: incluye la fórmula de fuerza utilizada.
 3. **Contacto**: formulario para enviar mensajes simulados y datos del autor.
-4. **Responsivo**: diseño adaptable para distintos tamaños de pantalla.
 
 
 ## Tabla de Archivos Principales
@@ -49,8 +46,8 @@ Link a gh page
 | `mockup/`         | Carpeta con mockups o diseños preliminares                        |
 | `sketch/`         | Carpeta con sketches o bocetos relacionados al proyecto          |
 | `README.md`       | Archivo de documentación principal del proyecto                   |
-| `index.html`      | Página principal del sitio                                        |
-| `formulas.html`   | Calculadora de fuerza con fórmula física                          |
+| `index.html`      | Página principal del sitio con calculadora de fuerza               |
+| `formulas.html`   | Fórmula física                                                     |
 | `contacto.html`   | Formulario de contacto con datos del autor                        |
 | `estilo.css`      | Hojas de estilo del sitio web                                     |
-| `calculos.js`     | Funciones JavaScript para lógica de formularios y cálculos       |
+| `calculos.js`     | Funciones JavaScript para lógica de formularios, cálculos.        |
